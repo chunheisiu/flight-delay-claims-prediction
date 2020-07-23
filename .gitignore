@@ -5,4 +5,4 @@
 
 venv/**/*
 
-flight_delays_data.csv
+data/**/*
