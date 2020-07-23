@@ -3,4 +3,6 @@
 **/.ipynb_checkpoints/*
 .idea/**/*
 
+venv/**/*
+
 flight_delays_data.csv
