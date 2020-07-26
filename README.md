@@ -20,11 +20,17 @@ After installing Python, run `python --version` to verify that you have Python 3
 Then, run `./create_venv.sh` to create a Python virtual environment and install the necessary packages used in this project.
 Finally, run `source ./venv/bin/activate` to activate the virtual environment.
 
+Note that you need to place the source `flight_delays_data.csv` file in the `/data` directory in order for the model training to function.
+
 
 ### Project Structure
 - Both the EDA and modeling processes were done using Jupyter notebooks. They are located under the `/notebooks` directory.
 - Model-related files such as the save models and helper files are located under the `/models` directory.
 - The data files should be located under the `/data` directory.
+
+To view and run the Jupyter notebooks, run `jupyter notebook` or `jupyter lab` and navigate to the `/notebooks` directory.
+
+To run the prediction script, run `python predict.py <full path to the input csv file> <full path to the output csv file>`.
 
 
 ### Technical Choices
