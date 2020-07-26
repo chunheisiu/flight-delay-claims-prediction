@@ -30,16 +30,17 @@ Note that you need to place the source `flight_delays_data.csv` file in the `/da
 
 To view and run the Jupyter notebooks, run `jupyter notebook` or `jupyter lab` and navigate to the `/notebooks` directory.
 
-To run the prediction script, run `python predict.py <full path to the input csv file> <full path to the output csv file>`.
+To run the prediction script, modify the variables under _Configure variables_ in the Model Prediction notebook and execute the notebook.
 
 
 ### Technical Choices
-- Jupyter notebooks are used for EDA and model training because notebooks allow easy editing and visualizations.
-- Python script is used for model prediction because Python script does not require frequent editing, and it allows one-click executions.
+- Jupyter notebooks are used for EDA and modeling because notebooks allow easy editing and straightforward visualizations.
 - PyTorch Neural Network is used as the model of choice because it is a technique that I have learned recently and would like to apply it to real-world scenarios.
 
 
 ### Trade-offs and Possible Improvements
-- I have jumped straight to a neural network-based model without first experimenting with a linear or tree-based model.
-- The model I have trained can only produce validation R-squared values at around 0.3, which is relatively low compare to the standard 0.8 or above.
+- I have jumped straight to a neural network-based model without first experimenting with a linear or tree-based model. I could spend some time with those models and see if there are any improvements to the model performance.
+- The model I have trained can only produce validation R-squared values at around 0.36, which is relatively low compare to the standard 0.8 or above.
 - There are possibly other ways to store model files, but for the sake of time and easy sharing, I have saved them as individual files on disk.
+- Although I have mentioned the possibility of imbalanced dataset in the EDA notebook, I never got around to implement an upsampling procedure during my model training process.
+- It is possible to use Python scripts (.py) rather than Jupyter Notebooks, but the changes in Python scripts are more difficult to realize and to debug. 
