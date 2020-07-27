@@ -44,3 +44,4 @@ To run the prediction script, modify the variables under _Configure variables_ i
 - There are possibly other ways to store model files, but for the sake of time and easy sharing, I have saved them as individual files on disk.
 - Although I have mentioned the possibility of imbalanced dataset in the EDA notebook, I never got around to implement an upsampling procedure during my model training process.
 - It is possible to use Python scripts (.py) rather than Jupyter Notebooks, but the changes in Python scripts are more difficult to realize and to debug. 
+- In the HKO Weather Data, there is a column of wind speed and wind direction but I did not include it in the list of features due to difficulties in parsing. Including that feature might improve model performance.
